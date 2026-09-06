@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  应用图标：一个秒表造型，呼应"广告读秒"主题。
+  作为普通 drawable 直接用作 android:icon，minSdk 21+ 可用。
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 背景：紫色圆 -->
+    <path
+        android:fillColor="#FF3700B3"
+        android:pathData="M54,54m-50,0a50,50 0,1 1,100 0a50,50 0,1 1,-100 0z" />
+
+    <!-- 秒表外框 -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M54,32 m-22,0 a22,22 0,1 0 44,0 a22,22 0,1 0 -44,0z" />
+    <path
+        android:fillColor="#FF3700B3"
+        android:pathData="M54,38 m-16,0 a16,16 0,1 0 32,0 a16,16 0,1 0 -32,0z" />
+
+    <!-- 顶部按钮 -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M50,12 h8 v8 h-8 z" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M44,8 h20 v4 h-20 z" />
+
+    <!-- 顶部吊环 -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="3"
+        android:fillColor="#00000000"
+        android:pathData="M54,16 m-6,0 a6,6 0,1 0 12,0 a6,6 0,1 0 -12,0z" />
+
+    <!-- 秒针 -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M54,38 L66,28" />
+
+    <!-- 中心点 -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M54,38 m-2.5,0 a2.5,2.5 0,1 0 5,0 a2.5,2.5 0,1 0 -5,0z" />
+</vector>

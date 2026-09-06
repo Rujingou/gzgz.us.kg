@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  无障碍服务配置。
+  - 监听窗口状态变化与窗口内容变化事件
+  - 只处理微信与小程序相关包名
+  - 读取屏幕节点文字，用于识别广告读秒与"跳过"按钮
+-->
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes="typeWindowStateChanged|typeWindowContentChanged|typeWindowsChanged"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:accessibilityFlags="flagDefault|flagRetrieveInteractiveWindows|flagRequestFilterKeyEvents"
+    android:canRetrieveWindowContent="true"
+    android:canPerformGestures="true"
+    android:description="@string/accessibility_service_description"
+    android:notificationTimeout="100"
+    android:packageNames="com.tencent.mm,com.tencent.mm:appbrand0,com.tencent.mm:appbrand1,com.tencent.mm:appbrand2,com.tencent.mm:tools" />

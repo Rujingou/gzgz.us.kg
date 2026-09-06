@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">广告读秒监听</string>
+    <string name="app_desc">监听微信小程序内的广告读秒，并在可跳过时自动点击</string>
+
+    <!-- 无障碍服务 -->
+    <string name="accessibility_service_label">广告读秒监听</string>
+    <string name="accessibility_service_description">
+        监听微信及小程序中的广告读秒文本。当广告出现"跳过"按钮或读秒结束时，自动点击跳过按钮以快速关闭广告。服务仅在微信前台时工作，不会读取其他应用内容。
+    </string>
+
+    <!-- 通知 -->
+    <string name="noti_channel_name">前台监听服务</string>
+    <string name="noti_channel_desc">保持广告读秒监听服务运行</string>
+    <string name="noti_running">正在监听微信广告读秒…</string>
+
+    <!-- 主界面按钮 -->
+    <string name="btn_open_accessibility">开启无障碍服务</string>
+    <string name="btn_open_notif">授予通知权限</string>
+    <string name="btn_adb_hint">查看 adb 启用方法</string>
+    <string name="btn_clear_log">清空日志</string>
+    <string name="log_title">实时日志</string>
+</resources>
