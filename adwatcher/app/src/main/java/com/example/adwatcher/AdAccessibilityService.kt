@@ -99,8 +99,8 @@ class AdAccessibilityService : AccessibilityService() {
                     if (seconds != null) {
                         countdownText = combined
                         LogStore.log("识别到广告读秒: $combined（剩余 ${seconds}s）")
-                        // 当读秒接近 0 或文本里只剩"跳过"时，准备点击
-                        if (seconds <= 1) {
+                        // 读秒到达 3 秒即准备点击跳过
+                        if (seconds <= 3) {
                             skipNode = findClickableAncestorOrSelf(node) ?: node
                         }
                     }
