@@ -98,11 +98,9 @@ class AdAccessibilityService : AccessibilityService() {
                     val seconds = extractSeconds(combined)
                     if (seconds != null) {
                         countdownText = combined
-                        LogStore.log("识别到广告读秒: $combined（剩余 ${seconds}s）")
-                        // 读秒到达 3 秒即准备点击跳过
-                        if (seconds <= 3) {
-                            skipNode = findClickableAncestorOrSelf(node) ?: node
-                        }
+                        LogStore.log("识别到广告读秒: $combined（剩余 ${seconds}s），立即尝试跳过")
+                        // 检测到读秒即尝试点击，不等待自然倒数
+                        skipNode = findClickableAncestorOrSelf(node) ?: node
                     }
                 }
 
